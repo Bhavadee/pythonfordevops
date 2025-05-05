@@ -1,0 +1,10 @@
+{
+    "name": "Bhavadee",
+    "age": 25,
+    "skills": [
+        "Python",
+        "AWS",
+        "Docker"
+    ],
+    "country": "India"
+}

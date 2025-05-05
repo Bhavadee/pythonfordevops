@@ -1,0 +1,5 @@
+my_tuple = (1, 2, 'apple', 'banana')
+first_element = my_tuple[0]  # Access the first element (1)
+tuple_length = len(my_tuple)  # Length of the tuple (4)
+second_element = my_tuple[2]  # Access the second element (2)
+print(my_tuple)

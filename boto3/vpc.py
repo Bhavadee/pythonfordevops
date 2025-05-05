@@ -1,6 +1,6 @@
 import boto3
 
-ec2 = boto3.client('ec2')
+ec2 = boto3.client('ec2', region_name='us-east-1')
 
 # 1. Create a VPC
 vpc_response = ec2.create_vpc(CidrBlock='10.0.0.0/16')
@@ -17,9 +17,9 @@ print("Created Subnet:", subnet_id)
 
 # 3. Launch an EC2 Instance inside the Subnet
 instance_response = ec2.run_instances(
-    ImageId='ami-053b0d53c279acc90',  # Replace with valid AMI ID for your region
+    ImageId='ami-0c2b8ca1dad447f8a',  # Replace with valid AMI ID for your region
     InstanceType='t2.micro',
-    KeyName='your-keypair-name',      # Replace with your real key pair
+    KeyName='nv123',      # Replace with your real key pair
     SubnetId=subnet_id,
     MinCount=1,
     MaxCount=1
